@@ -1,4 +1,4 @@
-import base64
+﻿import base64
 import hashlib
 import time
 import random
@@ -20,8 +20,8 @@ def get_params(base64_data):
     # 请求随机字符串，用于保证签名不可预测
     nonce_str = ''.join(random.sample(string.ascii_letters + string.digits, 10))
     # 应用标志，这里修改成自己的id和key
-    app_id = '1107044144'
-    app_key = '8461m2qsOhX7o4Hq'
+    app_id = ''
+    app_key = ''
     params = {'app_id': app_id,
               'image': base64_data,
               'time_stamp': time_stamp,
